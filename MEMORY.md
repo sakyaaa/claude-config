@@ -18,6 +18,16 @@
 
 ---
 
+## 2026-03-15 — Docker-инструкции в глобальном промпте
+
+**Что сделано:**
+- В `CLAUDE.md` добавлен раздел `## Docker` с правилом: команды фреймворков всегда выполнять через `docker-compose -f docker-compose.yml -f docker-compose.override.development.yml exec CONTAINER COMMAND`
+
+**Изменённые файлы:**
+- `CLAUDE.md` (добавлен раздел Docker)
+
+---
+
 ## 2026-03-15 — Разрешения WebSearch/WebFetch и project-level конфиг
 
 **Что сделано:**

@@ -15,6 +15,16 @@
 - `MEMORY.md` — история изменений; обновляется после каждой правки, дубли не нужны
 - `ARCHITECTURE.md` — стек, описание директорий и файлов, взаимодействие модулей, команды запуска, миграции
 
+## Docker
+
+Весь процесс разработки ведётся через Docker. Команды фреймворков (rails, bundle, rake, django-admin, manage.py, artisan и т.п.) **всегда** выполняй через docker-compose:
+
+```
+docker-compose -f docker-compose.yml -f docker-compose.override.development.yml exec CONTAINER COMMAND
+```
+
+Не запускай такие команды напрямую в хост-системе.
+
 ## После выполнения задачи
 
 1. **Обнови `MEMORY.md`** — до того, как сообщишь о завершении:
