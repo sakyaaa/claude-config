@@ -7,9 +7,29 @@
     "allow": [
       "WebSearch",
       "WebFetch",
-      "Bash(ls*)",
-      "Bash(cat*)",
-      "Bash(grep*)"
-    ]
+      "Agent",
+      "Bash(find *)",
+      "Bash(grep *)",
+      "Bash(ls *)",
+      "Bash(xargs *)",
+      "Bash(wc *)",
+      "Bash(head *)",
+      "Bash(tail *)",
+      "Bash(cat *)",
+      "Bash(git log *)",
+      "Bash(git status *)",
+      "Bash(git diff *)",
+      "Bash(git show *)",
+      "Bash(git branch *)",
+      "Bash(docker compose * ps*)",
+      "Bash(docker compose * logs*)",
+      "Bash(docker compose * exec * rspec *)",
+      "Bash(docker compose * exec * yarn test *)",
+      "Bash(docker compose * exec * bundle exec rspec *)",
+      "Bash(docker compose * exec * bundle exec rubocop *)",
+      "Bash(docker compose * exec * rails *)",
+      "Bash(docker compose * exec * yarn ts:check*)"
+    ],
+    "defaultMode": "default"
   }
 }
