@@ -50,3 +50,15 @@
 - `settings.json` (добавлен блок `permissions`)
 - `.claude/CLAUDE.md` (создан)
 - `MEMORY.md` (создан)
+
+---
+
+## 2026-03-20 — Git-стандарты и .gitignore
+
+**Что сделано:**
+- В `CLAUDE.md` раздел `## После выполнения задачи` обновлён: ветки теперь по Git Flow (`feat/short-desc`), коммиты по Conventional Commits (`type(scope): description`)
+- В `.gitignore` добавлены `paste-cache/` и `stats-cache.json`
+
+**Изменённые файлы:**
+- `CLAUDE.md`
+- `.gitignore`
