@@ -32,6 +32,11 @@ docker-compose -f docker-compose.yml -f docker-compose.override.development.yml 
    - Перечисли созданные и изменённые файлы
    - Если запись уже есть — обнови её, не дублируй
 
-2. **Git** — при апруве задачи уточни ветку, номер и название:
-   - Ветка: `1234_init_project` (номер + краткое название на английском)
-   - Коммит: `1234 - Инициализация проекта` (номер + название на русском)
+2. **Git** — используй общепринятые стандарты:
+   - **Ветка** ([Git Flow](https://nvie.com/posts/a-successful-git-branching-model/)): `type/short-description`
+     - Примеры: `feat/user-auth`, `fix/token-expiry`, `chore/update-deps`
+     - Типы: `feat`, `fix`, `hotfix`, `chore`, `docs`, `refactor`, `test`
+   - **Коммит** ([Conventional Commits](https://www.conventionalcommits.org/)): `type(scope): description`
+     - Примеры: `feat(auth): add JWT login`, `fix(api): resolve timeout issue`
+     - Типы: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`, `perf`, `ci`, `revert`
+     - `scope` — опциональный, указывает модуль/область изменений

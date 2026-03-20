@@ -16,3 +16,5 @@ plans/
 plugins/
 projects/
 mcp-needs-auth-cache.json
+paste-cache/
+stats-cache.json
