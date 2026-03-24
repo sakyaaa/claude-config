@@ -62,3 +62,15 @@
 **Изменённые файлы:**
 - `CLAUDE.md`
 - `.gitignore`
+
+---
+
+## 2026-03-24 — Добавлен MCP-сервер Playwright
+
+**Что сделано:**
+- Создан `mcp.json` с настройкой MCP-сервера Playwright (`@playwright/mcp@latest`, headful-режим)
+- В `.gitignore` добавлены `image-cache/` и `tasks/` — временные каталоги
+
+**Изменённые файлы:**
+- `mcp.json` (создан)
+- `.gitignore` (добавлены 2 строки)
