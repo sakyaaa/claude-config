@@ -65,6 +65,22 @@
 
 ---
 
+## 2026-05-31 — LibreOffice MCP сервер (waterpistolai)
+
+**Что сделано:**
+- Клонирован `waterpistolai/libreoffice-mcp` в `~/.local/share/libreoffice-mcp/`
+- Создан venv `~/.local/share/libreoffice-mcp/.venv` с `--system-site-packages` (нужно для `import uno`)
+- Установлены зависимости: `ooo-dev-tools`, `mcp`, `fastapi`, `python-dotenv`, `uvicorn`
+- Добавлен сервер `libreoffice` в `~/.claude/mcp.json`
+- LibreOffice слушает на `localhost:2083`, output dir: `~/libreoffice-output`
+- Перед использованием нужно запустить LO: `soffice --headless --accept="socket,host=localhost,port=2083;urp;StarOffice.ServiceManager" &`
+
+**Изменённые файлы:**
+- `mcp.json` (добавлен libreoffice сервер)
+- `MEMORY.md` (эта запись)
+
+---
+
 ## 2026-05-31 — Python venv для агента
 
 **Что сделано:**

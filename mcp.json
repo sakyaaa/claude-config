@@ -6,6 +6,14 @@
       "env": {
         "PLAYWRIGHT_HEADLESS": "false"
       }
+    },
+    "libreoffice": {
+      "command": "/home/sakyaaa/.local/share/libreoffice-mcp/.venv/bin/python3",
+      "args": ["/home/sakyaaa/.local/share/libreoffice-mcp/libreoffice.py"],
+      "env": {
+        "LIBREOFFICE_PORT": "2083",
+        "LIBREOFFICE_OUTPUT_DIR": "/home/sakyaaa/libreoffice-output"
+      }
     }
   }
 }
