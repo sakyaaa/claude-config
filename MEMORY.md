@@ -65,6 +65,19 @@
 
 ---
 
+## 2026-05-31 — Python venv для агента
+
+**Что сделано:**
+- Создан venv `~/.local/share/claude-venv/` для Python-задач агента (работа с docx/pptx, парсинг, анализ данных)
+- Установлены пакеты: `python-docx`, `python-pptx`, `openpyxl`, `pandas`, `requests`, `beautifulsoup4`, `lxml`, `Pillow`, `PyYAML`, `jinja2`, `rich`
+- В `CLAUDE.md` добавлен раздел `## Python-окружение агента` с путём к интерпретатору
+
+**Изменённые файлы:**
+- `CLAUDE.md` (добавлен раздел)
+- `MEMORY.md` (эта запись)
+
+---
+
 ## 2026-03-24 — Добавлен MCP-сервер Playwright
 
 **Что сделано:**

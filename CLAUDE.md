@@ -25,6 +25,21 @@ docker-compose -f docker-compose.yml -f docker-compose.override.development.yml 
 
 Не запускай такие команды напрямую в хост-системе.
 
+## Python-окружение агента
+
+Для задач, требующих Python-скриптов (работа с .docx, .pptx, .xlsx, парсинг, анализ данных и т.п.),
+используй готовый venv:
+
+```
+~/.local/share/claude-venv/bin/python3
+```
+
+Установленные пакеты: `python-docx`, `python-pptx`, `openpyxl`, `pandas`, `requests`,
+`beautifulsoup4`, `lxml`, `Pillow`, `PyYAML`, `jinja2`, `rich`.
+
+Не ставь пакеты через `pip install` напрямую — Arch Linux требует venv. Если нужен новый пакет,
+добавь его через `~/.local/share/claude-venv/bin/pip install <пакет>`.
+
 ## После выполнения задачи
 
 1. **Обнови `MEMORY.md`** — до того, как сообщишь о завершении:
