@@ -1,4 +1,5 @@
 {
+  "_note": "Этот файл НЕ читается Claude Code. Реальный конфиг MCP хранится в ~/.claude.json и управляется через `claude mcp add --scope user`. Этот файл оставлен как справочник.",
   "mcpServers": {
     "playwright": {
       "command": "npx",

@@ -67,6 +67,11 @@
 
 ## 2026-05-31 — LibreOffice MCP сервер (waterpistolai)
 
+> **Важно:** MCP-конфиг Claude Code хранится в `~/.claude.json`, а НЕ в `~/.claude/mcp.json`.
+> Управляется через `claude mcp add --scope user`. Файл `mcp.json` в репо оставлен как справочник.
+
+
+
 **Что сделано:**
 - Клонирован `waterpistolai/libreoffice-mcp` в `~/.local/share/libreoffice-mcp/`
 - Создан venv `~/.local/share/libreoffice-mcp/.venv` с `--system-site-packages` (нужно для `import uno`)
